@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.main, .about {
+    width: 100%;
+    height: 100vh;
+    background:radial-gradient(#f7fafab2 ,#000000 );
+}
+.navbars {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: hsl(0, 0%, 0%); 
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    color: rgba(159, 96, 143, 0.6);
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family:Roboto;
+    padding-left: 25px;
+    padding-top: 25px;
+    float: left;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+.logo:hover{
+    color: hsla(120, 92%, 31%,0.8);
+}
+
+.logo span {
+    color: hsla(120, 92%, 31%,0.8);
+    transition: 0.2 ease-in-out;
+}
+.logo span:hover {
+    color: rgba(159, 96, 143, 0.6);
+}
+
+ul {
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 800px;
+}
+ul li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: -80px;
+    font-size: 14px;
+    font-family:Roboto;
+}
+ul li a {
+    text-decoration: none;
+    color: hsla(348, 83%, 47%,1.2);
+    font-family: Roboto;
+    font-weight: 400;
+    transition: 0.5 ease-in-out;
+}
+ul li a:hover{
+    color: rgba(159, 96, 143, 0.6);
+}
+.content {
+    position: relative;
+    width: 5%;
+    height: 20%;
+    margin-left: 70vh;
+    cursor: pointer;
+    padding-top: 30vh;
+}
+.content .hi {
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 60px;
+    color: hsl(240, 100%, 50%);
+}
+.content .hero {
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 80px;
+    color: hsl(48, 100%, 93%);
+}
+.content .hero span {
+    color: hsla(34, 57%, 70%,0.7);
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+.content .hero span:hover{
+    color: rgb(247, 172, 75);
+}
+ .btn {
+    background-color: #000000;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    white-space: nowrap;
+    border-radius: 30px;
+    color: hsla(160, 100%, 75%,0.4);
+   
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #7fffd4;
+    padding: 10px 40px;
+    background-color: #000000;
+    transition: 0.3s ease-in-out;
+    gap: 100px;
+  }
+  .about {
+    width: 100%;
+    height: auto;
+    background:radial-gradient(#f8fcfbb2 ,#000000 );
+}
+
+ .name {
+    font-family: Roboto;
+    padding-top: 150px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: hsla(34, 57%, 70%,0.7);
+}
+.name:hover {
+    color: hsla(0, 94%, 50%,0.5);
+}
+.par {
+    color: hsla(208, 100%, 97%,0.8);
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-right: 150px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    line-height: 1cm;
+}
+.education {
+    padding: 35px 10%;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.col .title {
+    font-family: Roboto;
+    color: rgb(96, 252, 6);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.col .contents {
+    padding: 0px 30px;
+    border-left: 2px solid #fdf9f9;
+}
+.col .contents .box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #fcf8f8;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px #000000;
+    border: 1px solid transparent;
+}
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color:black;
+    border: 2px solid white;
+}
+.box h4 {
+    position: relative;
+    color: hsl(271, 76%, 53%);
+}
+.box h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 0px 6px;
+    font-family: Roboto;
+    color: hsl(276, 100%, 75%);
+}
+.box p {
+    line-height: 1.2;
+    color: rgb(248, 124, 124);
+    font-size: 17px;
+}
+.box p span {
+    color: hsl(276, 100%, 75%);
+    text-transform: uppercase;
+}
+.box p a {
+text-decoration: none;
+}
+.skills {
+    width: 100%;
+    height: 110vh;
+    background:radial-gradient(#f8fcfbb2 ,#000000 );
+}
+.skills h1 {
+    text-transform: uppercase;
+    position: relative;
+    padding-top:150px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+.skills h1:hover{
+    color: #7fffd4;
+}
+
+.skills .row-2{
+    display: flexbox;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .skills .row-2 .skill {
+    flex: 1 1 40rem;
+ }
+  .skills .row-2 .skill .progress{
+    padding: 0rem 0;
+  }
+  .skills .row-2 .skill .progress h3{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding: 1 1rem;
+    font-size: 1.7rem;
+    color: rgb(248, 160, 160);
+    font-weight: 400;
+  }
+  .skills .row-2 .skill .progress .bar{
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    -ms-border-radius: 50rem;
+    -o-border-radius: 50rem;
+  }
+  .skills .row-2 .skill .progress .bar span{
+    display: block;
+    height: 100%;
+    background: hsla(170, 94%, 65%,0.5);
+  }
+  .skills .row-2 .skill .progress:nth-child(1) .bar span{
+    width: 95%;
+  }
+  .skills .row-2 .skill .progress:nth-child(2) .bar span{
+    width: 50%;
+  }
+  .skills .row-2 .skill .progress:nth-child(3) .bar span{
+    width: 95%;
+  }
+  .skills .row-2 .skill .progress:nth-child(4) .bar span{
+    width: 95%;
+  }
+  .skills .row-2 .skill .progress:nth-child(5) .bar span{
+    width: 50%;
+  }
+  .skills .row-2 .skill .progress:nth-child(6) .bar span{
+    width: 75%;
+  }
+  .skills .row-2 .skill .progress:nth-child(7) .bar span{
+    width: 60%;
+  }
+  .skills .row-2 .skill .progress:nth-child(8) .bar span{
+    width: 80%;
+  }
+  .projects {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+  }
+  .projects .pro_title {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 110px;
+  }
+  .flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+ .flex_container .box2 {
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  background-color:hsla(0, 0%, 0%,0.2);
+  border-radius: 4px;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+ }
+ .flex_container .box2:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  background-color: hsla(34, 78%, 91%,0.5);
+ }
+ .flex_container .box2 .icon {
+  text-align: center;
+  justify-content: center;
+  
+ }
+ .content2 h3 {
+  text-align: center;
+  text-transform: uppercase;
+ } 
+ .content2 p {
+  text-align: center;
+  text-transform: capitalize;
+ }
+
+ .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .section-title {
+    padding-top: 100px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-control:focus {
+    border-color: #555;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn-submit {
+    background-color: #555;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #333;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 767px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+ 
